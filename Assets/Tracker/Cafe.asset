@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Cafe
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4883726063531099647
+  m_GuidHigh: 15890421926260236676
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4783503393508125862
+      m_GuidHigh: 13344425906601692579
+    m_SerializedTextureGuid:
+      m_GuidLow: 8125694353542451521
+      m_GuidHigh: 14650883200236857161
+    m_Size: {x: 0.09882813, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: 
+    m_Texture: {fileID: 2800000, guid: 784b914143f670c44927db9ba56452cb, type: 3}
