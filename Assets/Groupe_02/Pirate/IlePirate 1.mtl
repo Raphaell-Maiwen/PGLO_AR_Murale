@@ -1,0 +1,24 @@
+# Blender MTL File: 'Spaces_Groupe1.blend'
+# Material Count: 2
+
+newmtl PirateBake
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Bake-Water.png
+
+newmtl Shine
+Ns 506.250000
+Ka 0.716667 0.716667 0.716667
+Kd 0.886274 0.236088 0.041134
+Ks 0.000000 0.000000 0.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd Bake-Water.png
