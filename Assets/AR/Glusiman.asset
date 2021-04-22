@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Glusiman
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5437032506500486909
+  m_GuidHigh: 5881390689779521447
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5171641793550820881
+      m_GuidHigh: 14124689006567853227
+    m_SerializedTextureGuid:
+      m_GuidLow: 14471367108113299513
+      m_GuidHigh: 14228732352132586795
+    m_Size: {x: 0.1, y: 0.100392155}
+    m_SpecifySize: 1
+    m_Name: 001
+    m_Texture: {fileID: 2800000, guid: 555d78399fb6c8d42b9df8ecaf9c76c5, type: 3}

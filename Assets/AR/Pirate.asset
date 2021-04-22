@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Pirate
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5027200383058532892
+  m_GuidHigh: 12099592435217715626
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5521728462688201338
+      m_GuidHigh: 757319385069813926
+    m_SerializedTextureGuid:
+      m_GuidLow: 14471367108113299513
+      m_GuidHigh: 14228732352132586795
+    m_Size: {x: 0.1, y: 0.100392155}
+    m_SpecifySize: 0
+    m_Name: 001
+    m_Texture: {fileID: 2800000, guid: 555d78399fb6c8d42b9df8ecaf9c76c5, type: 3}
