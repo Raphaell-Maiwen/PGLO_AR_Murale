@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
   m_Name: Malik
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7328897133368338712, guid: f773fed6f8e9c1243a3031fdc6ea6141, type: 3}
+  prefab: {fileID: 5586554948462205793, guid: 635321b0b2cbd2d9da7925c15e90ab65, type: 3}
   eleve: Malik
   title: "Les tr\xE9sors de Jack"
   photo: {fileID: 21300000, guid: ab00f0d5f1641c07e94a3da3a75d852a, type: 3}

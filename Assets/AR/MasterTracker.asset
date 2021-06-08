@@ -129,12 +129,12 @@ MonoBehaviour:
       m_GuidLow: 5533458300798121949
       m_GuidHigh: 12129576526287007629
     m_SerializedTextureGuid:
-      m_GuidLow: 353799304680947995
-      m_GuidHigh: 9546366543394686617
-    m_Size: {x: 0.1704474, y: 0.17111582}
+      m_GuidLow: 13699245373106391472
+      m_GuidHigh: 2827579347552373640
+    m_Size: {x: 0.1704474, y: 0.17171939}
     m_SpecifySize: 1
     m_Name: Malik
-    m_Texture: {fileID: 2800000, guid: d549c11bf29704e899c6b6daca817b84, type: 3}
+    m_Texture: {fileID: 2800000, guid: caeb89b07f15be1d880b17796f943d27, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5617869852179954975
       m_GuidHigh: 1470618498708139143

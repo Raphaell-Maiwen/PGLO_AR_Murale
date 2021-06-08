@@ -63,7 +63,7 @@ public class ArSceneInstantiator : MonoBehaviour
         Debug.Log("On faded");
         GameObject s = Instantiate<GameObject>(this.bulle.Prefab);
 
-        s.transform.SetParent(sceneRoot.GetChild(0));
+        s.transform.SetParent(sceneRoot);
         s.transform.localPosition = Vector3.zero;
         s.transform.localRotation = Quaternion.identity;
 
