@@ -166,7 +166,7 @@ PlayerSettings:
     Android: com.dbsoft.bulles
     Standalone: unity.DefaultCompany.FPS2
     Tizen: com.Company.ProductName
-    iPhone: com.Company.ProductName
+    iPhone: com.bulles.tgc
     tvOS: com.Company.ProductName
   buildNumber:
     iPhone: 0
@@ -186,7 +186,7 @@ PlayerSettings:
   StripUnusedMeshComponents: 0
   VertexChannelCompressionMask: 214
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 10.0
+  iOSTargetOSVersionString: 11.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 10.0
@@ -254,7 +254,7 @@ PlayerSettings:
   iOSManualSigningProvisioningProfileType: 0
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
-  iOSRequireARKit: 0
+  iOSRequireARKit: 1
   iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   clonedFromGUID: 91978008845431f4dbfdca1209e8fb66
@@ -495,7 +495,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
+  cameraUsageDescription: AR
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 
@@ -738,7 +738,7 @@ PlayerSettings:
     28: UNITY_POST_PROCESSING_STACK_V2
     29: UNITY_POST_PROCESSING_STACK_V2
   platformArchitecture:
-    iPhone: 2
+    iPhone: 1
     tvOS: 1
   scriptingBackend:
     Android: 0

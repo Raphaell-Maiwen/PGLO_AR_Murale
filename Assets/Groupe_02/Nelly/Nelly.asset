@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Nelly
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7332065039297070965, guid: 0c40ce9199d11f34c83d52b6faa6d861, type: 3}
+  eleve: Nelly
+  title: Ville-Nelly
+  photo: {fileID: 21300000, guid: 7b300c6c30f35f748b4dcc6c45ff3bbe, type: 3}

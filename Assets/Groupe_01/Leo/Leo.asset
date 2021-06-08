@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Leo
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2433781200360675696, guid: a740769cdb6cef942be6f23996335770, type: 3}
+  eleve: "L\xE9o"
+  title: "La r\xE9publique de M\xE9canus"
+  photo: {fileID: 21300000, guid: c0dbb483657e4c74f9b682174105ec2a, type: 3}

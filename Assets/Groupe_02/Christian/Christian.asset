@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Christian
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5281293818218052106, guid: 8a99bb55cfab48c4a8778c91fa98b28f, type: 3}
+  eleve: Christian
+  title: Enoji
+  photo: {fileID: 21300000, guid: c293c081bef90ae45b5fd80f07493d30, type: 3}

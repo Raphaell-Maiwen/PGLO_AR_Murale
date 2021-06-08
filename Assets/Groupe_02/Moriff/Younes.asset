@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Younes
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3114757082173744048, guid: 6db6de24ae4a5904ab63d925e20f53ba, type: 3}
+  eleve: Younes
+  title: "L\u2019univers de Morif"
+  photo: {fileID: 21300000, guid: 3e004e55e77708e47b6c8292c61ee907, type: 3}
