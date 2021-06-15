@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PeopleMove : MonoBehaviour
 {
-    public Vector3 positionToMoveTo;
+    public Transform PositionToMoveTo;
+    private Vector3 positionToMoveTo;
     public float duration;
     private Vector3 startPosition;
     bool forth = false;
 
     void Start() {
+        positionToMoveTo = PositionToMoveTo.position;
         startPosition = this.transform.position;
         StartCoroutine(LerpPosition(positionToMoveTo, duration));
     }
