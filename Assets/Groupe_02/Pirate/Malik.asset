@@ -15,4 +15,10 @@ MonoBehaviour:
   prefab: {fileID: 5586554948462205793, guid: 635321b0b2cbd2d9da7925c15e90ab65, type: 3}
   eleve: Malik
   title: "Les tr\xE9sors de Jack"
-  photo: {fileID: 21300000, guid: ab00f0d5f1641c07e94a3da3a75d852a, type: 3}
+  photo: {fileID: 21300000, guid: 4ef8e705ba438c38c9215dfdd9543129, type: 3}
+  bulle: {fileID: 21300000, guid: 2793eb5a44ef30a76a067cf9a663b609, type: 3}
+  petiteBulle: {fileID: 21300000, guid: d4bac29d49471c8d9bfbeb9acf724bce, type: 3}
+  titre: {fileID: 21300000, guid: 499f6b6358ef914f8a559238df7de1b8, type: 3}
+  description: "Capitaine Jack ne quitte jamais son bateau et entra\xEEne son \xE9quipage
+    dans d\u2019extraordinaires aventures \xE0 la recherche de tr\xE9sors cach\xE9s."
+  backgroundColor: {r: 0, g: 0.8039216, b: 0.9372549, a: 0}

@@ -95,8 +95,6 @@ namespace UnityEngine.XR.ARFoundation.Samples
             foreach (var trackedImage in eventArgs.added)
             {
 
-                Debug.Log(trackedImage.referenceImage.name);
-
                 // Give the initial image a reasonable default scale
                 // var minLocalScalar = Mathf.Min(trackedImage.size.x, trackedImage.size.y) / 2;
                 // trackedImage.transform.localScale = new Vector3(minLocalScalar, minLocalScalar, minLocalScalar);
@@ -124,15 +122,15 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 // go.transform.LookAt(go.transform.position + imageForward, GameManager.Instance._arWorldUp);
                 // go.transform.localPosition = Vector3.zero;
                 // go.transform.localRotation = Quaternion.identity;
-         
-         
+
+
                 // ArSceneInstantiator arSceneInstantiator = m_BasePrefab.GetComponent<ArSceneInstantiator>();
                 // Debug.Log("Bulle is ");
                 // Debug.Log(bulle);
                 // arSceneInstantiator.SetMonde(bulle);
 
 
-                         
+
                 BulleAnchor bulleAnchor = m_BasePrefab.GetComponentInChildren<BulleAnchor>();
                 Debug.Log("Bulle is ");
                 Debug.Log(bulle);
@@ -142,38 +140,58 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 go.transform.localPosition = Vector3.zero;
                 go.transform.localRotation = Quaternion.identity;
 
+                go.transform.SetParent(GameManager.Instance.ARSessionOrigin, true);
 
-                go.transform.GetChild(0).transform.position = trackedImage.transform.position;
-
-                Vector3 imageForward = Vector3.ProjectOnPlane(trackedImage.transform.up, GameManager.Instance._arWorldUp).normalized;
-
-
-                // Vector3 imageToCamera = GameManager.Instance.Camera.transform.forward - trackedImage.transform.position;
+                //                 go.transform.localPosition = Vector3.zero;
+                //                 go.transform.localRotation = Quaternion.identity;
 
 
-                // float dotProduct = Vector3.Dot(GameManager.Instance.Camera.transform.forward, imageToCamera);
+                //                 go.transform.GetChild(0).transform.position = trackedImage.transform.position;
 
 
-                // float forwardMultiplier = 0;
+                //                     Vector3 recorded = GameManager.Instance.Camera.transform.position - trackedImage.transform.position;
+                //                 // Vector3 recorded = trackedImage.transform.up;
+
+                //                 // if(recorded == GameManager.Instance._arWorldUp){
+                //                     // recorded = GameManager.Instance.Camera.transform.position - trackedImage.transform.position;
+                //                 // }
+
+                //                 Vector3 imageForward = Vector3.ProjectOnPlane(recorded, GameManager.Instance._arWorldUp).normalized;
 
 
-                // if (dotProduct >= 0f)
-                // {
-                //     forwardMultiplier = -1;
-                // }
-                // else
-                // {
-                //     forwardMultiplier = 1;
-                // }
+                // Debug.Log("\n\nLE TRACK");  
+                // Debug.Log(GameManager.Instance._arWorldUp);
+                // Debug.Log(trackedImage.transform.up);
+                // Debug.Log(imageForward);
+                // Debug.Log("LE TACKE END\n\n");
+                //                 // Vector3 imageToCamera = GameManager.Instance.Camera.transform.forward - trackedImage.transform.position;
+
+
+                //                 // float dotProduct = Vector3.Dot(GameManager.Instance.Camera.transform.forward, imageToCamera);
+
+
+                //                 // float forwardMultiplier = 0;
+
+
+                //                 // if (dotProduct >= 0f)
+                //                 // {
+                //                 //     forwardMultiplier = -1;
+                //                 // }
+                //                 // else
+                //                 // {
+                //                 //     forwardMultiplier = 1;
+                //                 // }
 
 
 
-                go.transform.GetChild(0).LookAt(go.transform.GetChild(0).transform.position + imageForward, GameManager.Instance._arWorldUp);
-                // go.transform.SetParent(null);
-                // go.transform.GetChild(0).LookAt(trackedImage.transform.position + trackedImage.transform.forward, GameManager.Instance._arWorldUp);
+                //                 go.transform.GetChild(0).LookAt(go.transform.GetChild(0).transform.position + imageForward, GameManager.Instance._arWorldUp);
+
+                //                 // go.transform.GetChild(0).Rotate()
+                //                 // go.transform.SetParent(null);
+                //                 // go.transform.GetChild(0).LookAt(trackedImage.transform.position + trackedImage.transform.forward, GameManager.Instance._arWorldUp);
 
 
-                Debug.Log($"image forward is {trackedImage.transform.forward}, world up is { GameManager.Instance._arWorldUp}");
+                //                 Debug.Log($"image forward is {trackedImage.transform.forward}, world up is { GameManager.Instance._arWorldUp}");
 
                 m_Instantiated[trackedImage.referenceImage.guid] = go;
             }

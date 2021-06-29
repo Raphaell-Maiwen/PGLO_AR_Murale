@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 3795594034059628639, guid: 4e3ac1a685cd9a7469c1d0dc06f54225, type: 3}
   eleve: Adam
   title: Le monde des Doudous
-  photo: {fileID: 21300000, guid: 50011b047be532d48b8c0a539dc1b80f, type: 3}
+  photo: {fileID: 21300000, guid: 3a8eb480c40290f319c253ea6d3443c1, type: 3}
+  bulle: {fileID: 21300000, guid: b5cd71b5cfc149567add508c7ae01bca, type: 3}
+  petiteBulle: {fileID: 21300000, guid: e6ae1a94a5c671c8a967f1a68898ffe4, type: 3}
+  titre: {fileID: 21300000, guid: 30ebd6b426cf01d35b8004a3856d4d48, type: 3}
+  description: "Les Doudous sont de petites cr\xE9atures avec deux t\xEAtes et une
+    impressionnante chevelure. Ils habitent dans un monde o\xF9 vivent un oiseau
+    vert, des fleurs et plusieurs soleils."
+  backgroundColor: {r: 1, g: 0.6392157, b: 0.5411765, a: 0}

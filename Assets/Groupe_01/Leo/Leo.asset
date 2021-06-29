@@ -15,4 +15,13 @@ MonoBehaviour:
   prefab: {fileID: 2433781200360675696, guid: a740769cdb6cef942be6f23996335770, type: 3}
   eleve: "L\xE9o"
   title: "La r\xE9publique de M\xE9canus"
-  photo: {fileID: 21300000, guid: c0dbb483657e4c74f9b682174105ec2a, type: 3}
+  photo: {fileID: 21300000, guid: efd22b05e10b965a79c854e13fae54ff, type: 3}
+  bulle: {fileID: 21300000, guid: 60bcf0b50d9356360b089bff57b77bcb, type: 3}
+  petiteBulle: {fileID: 21300000, guid: e10c5c99f41c423db976ba0e824c0c7e, type: 3}
+  titre: {fileID: 21300000, guid: 835f95e3dab5856d5845b44edc829843, type: 3}
+  description: "Suite \xE0 une guerre contre l\u2019Empire Jupiter, les survivants
+    (les Chevaliers d\u2019Atlas), ont cr\xE9\xE9 six prototypes de m\xE9canos :
+    Licorne blanche, Lion noir, Phoenix dor\xE9, Dragon bleu, Serpent rouge et Galaxie.
+    Ceux-ci ont \xE9t\xE9 convertis en robots gr\xE2ce \xE0 un m\xE9dicament qui
+    transforme le sang en m\xE9tal."
+  backgroundColor: {r: 0.41960785, g: 0.38039216, b: 1, a: 0}

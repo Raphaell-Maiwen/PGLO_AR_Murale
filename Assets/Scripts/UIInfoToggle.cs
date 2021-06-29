@@ -6,18 +6,21 @@ using UnityEngine.UI;
 public class UIInfoToggle : MonoBehaviour
 {
     [SerializeField] GameObject target;
-    [SerializeField] Text text;
+    [SerializeField] Image image;
+
+    [SerializeField] Sprite open;
+    [SerializeField] Sprite close;
 
     // Start is called before the first frame update
     public void Toggle()
     {
         if (!target.activeSelf)
         {
-            text.text = "x";
+            image.sprite = close;
         }
         else
         {
-            text.text = "i";
+            image.sprite = open;
         }
 
         target.SetActive(!target.activeSelf);

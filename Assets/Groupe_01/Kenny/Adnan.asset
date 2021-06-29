@@ -15,4 +15,13 @@ MonoBehaviour:
   prefab: {fileID: 3633950938736038148, guid: 16107e5852fbd3847bed230edfade7c8, type: 3}
   eleve: Adnan
   title: Ceci n'est pas un monde absurde
-  photo: {fileID: 21300000, guid: 2fe2488eccd7e1448891112f547e6c36, type: 3}
+  photo: {fileID: 21300000, guid: a45af95deb924ee94b39321d7961d803, type: 3}
+  bulle: {fileID: 21300000, guid: 1de488d45a1af5fe688236c342c46fb6, type: 3}
+  petiteBulle: {fileID: 21300000, guid: d49770461eea74677b9934357586d0a8, type: 3}
+  titre: {fileID: 21300000, guid: 93050181c532607abbeb17a6cc420123, type: 3}
+  description: "Un monde absurde habit\xE9 par des Fruitilit\xE9s, o\xF9 le rire
+    est roi et utilis\xE9 en toutes circonstances: r\xE9gler des conflits, enrayer
+    des maladies, faire des achats. Dans ce monde il n\u2019y a qu\u2019une seule
+    rue en forme de beigne, afin d\u2019illustrer que la vie est un cycle parfois
+    bien absurde."
+  backgroundColor: {r: 0.8980392, g: 0.45882353, b: 0.6901961, a: 0}

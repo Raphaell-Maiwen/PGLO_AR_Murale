@@ -6,12 +6,20 @@ public class GameManager : Singleton<GameManager>
 {
     [SerializeField] public Vector3 _arWorldUp;
 
+    public Transform floorPlane;
+
+    [SerializeField] private float fadeDuration;
+
 
     [SerializeField] private Camera _camera;
+
+    [SerializeField] private AnimationCurve animationCurve;
 
     private bool _isLocked = false;
 
     private ArSceneInstantiator currentBulle = null;
+
+    UnityEngine.XR.ARFoundation.ARCameraBackground _arCameraBackground = null;
 
     public bool IsLocked
     {
@@ -29,6 +37,16 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    [SerializeField] UnityEngine.XR.ARFoundation.ARSessionOrigin _arSessionOrigin;
+
+    public Transform ARSessionOrigin
+    {
+        get
+        {
+            return _arSessionOrigin.trackablesParent;
+        }
+    }
+
 
     protected override void Awake()
     {
@@ -42,6 +60,19 @@ public class GameManager : Singleton<GameManager>
         get
         {
             return _camera;
+        }
+    }
+
+    public UnityEngine.XR.ARFoundation.ARCameraBackground ARCameraBackground
+    {
+        get
+        {
+            if (_arCameraBackground == null)
+            {
+                _arCameraBackground = _camera.GetComponent<UnityEngine.XR.ARFoundation.ARCameraBackground>();
+            }
+
+            return _arCameraBackground;
         }
     }
 
@@ -79,6 +110,61 @@ public class GameManager : Singleton<GameManager>
         if (bulle == currentBulle)
         {
             _isLocked = false;
+        }
+    }
+
+    public void FadeIn()
+    {
+        StartCoroutine(IEFadeIn());
+    }
+
+    public void FadeOut()
+    {
+        Debug.Log("FadeOut");
+        StartCoroutine(IEFadeOut());
+    }
+
+    IEnumerator IEFadeOut()
+    {
+
+        float time = 0;
+
+
+        while (time <= fadeDuration)
+        {
+            float then = Time.time;
+            yield return new WaitForEndOfFrame();
+            float delta = Time.time - then;
+
+            float t = (time / fadeDuration);
+
+            _fadePostProcess.fadeValue = t;
+
+            // _arMaterial.SetFloat("_dimFactor", 1f - t);
+
+            time += delta;
+        }
+    }
+
+    IEnumerator IEFadeIn()
+    {
+
+        float time = 0;
+
+
+        while (time <= fadeDuration)
+        {
+            float then = Time.time;
+            yield return new WaitForEndOfFrame();
+            float delta = Time.time - then;
+
+            float t = (time / fadeDuration);
+
+            _fadePostProcess.fadeValue = 1f - t;
+
+            // _arMaterial.SetFloat("_dimFactor", 1f - t);
+
+            time += delta;
         }
     }
 }

@@ -35,15 +35,84 @@ public class Bulle : ScriptableObject
         }
     }
 
+
     [SerializeField] Sprite photo;
 
 
 
-    public Sprite Photo
+    public Sprite SpritePhoto
     {
         get
         {
             return photo;
+        }
+    }
+
+
+    [SerializeField] Sprite bulle;
+
+
+
+    public Sprite SpriteBulle
+    {
+        get
+        {
+            return bulle;
+        }
+    }
+
+
+
+
+    [SerializeField] Sprite petiteBulle;
+
+
+
+    public Sprite SpritePetiteBulle
+    {
+        get
+        {
+            return petiteBulle;
+        }
+    }
+
+
+
+
+    [SerializeField] Sprite titre;
+
+
+
+    public Sprite SpriteTitre
+    {
+        get
+        {
+            return titre;
+        }
+    }
+
+
+
+    [SerializeField] string description;
+
+
+    public string Description
+    {
+        get
+        {
+            return description;
+        }
+    }
+
+
+    [SerializeField] Color backgroundColor;
+
+
+    public Color BackgroundColor
+    {
+        get
+        {
+            return backgroundColor;
         }
     }
 }

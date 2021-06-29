@@ -15,4 +15,17 @@ MonoBehaviour:
   prefab: {fileID: 6662463445649527929, guid: cbd48431a9a58a44ebbefe63ee463639, type: 3}
   eleve: Roy
   title: Islandus
-  photo: {fileID: 21300000, guid: f2bdcab29ee39e041ae52b216e899d7b, type: 3}
+  photo: {fileID: 21300000, guid: 813a09761a78c5cb289ee4a1e8ced07e, type: 3}
+  bulle: {fileID: 21300000, guid: 34fcc57e831e8d3e498555c4dde9e3a9, type: 3}
+  petiteBulle: {fileID: 21300000, guid: e0c791b947f9cefb5a5ef995df059373, type: 3}
+  titre: {fileID: 21300000, guid: 41b17650695fe5d568501303256f0d8b, type: 3}
+  description: "Islandus est suspendu par une force \xE9lectromagn\xE9tique qui g\xE9n\xE8re
+    de l\u2019\xE9lectricit\xE9 et qui, par cons\xE9quent, ne produit aucune pollution.
+    L\u2019oxyg\xE8ne y est pur. Toutes les cr\xE9atures y vivent en harmonie : celles
+    en voie d\u2019extinction, celles du pass\xE9 et plusieurs qui sont g\xE9n\xE9tiquement
+    modifi\xE9es. Les habitants v\xE9n\xE8rent l\u2019eau et le soleil. Ces derniers
+    circulent \xE0 l\u2019int\xE9rieur de capsules qui voyagent extr\xEAmement vite
+    gr\xE2ce au champ de force. Le Roi Garo est le roi de l\u2019univers. Il tient
+    dans ses mains un clone de lui-m\xEAme gr\xE2ce auquel il se r\xE9g\xE9n\xE8re
+    lorsqu\u2019il meurt."
+  backgroundColor: {r: 0.49411765, g: 0.85490197, b: 0.7529412, a: 0}

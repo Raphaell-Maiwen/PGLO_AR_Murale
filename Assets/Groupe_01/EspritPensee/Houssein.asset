@@ -14,5 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8016424799923411170, guid: 292a9dd0f811f5248bcbb29526d2e65d, type: 3}
   eleve: Houssein
-  title: "Esprit Pens\xE9e"
-  photo: {fileID: 21300000, guid: 8d8858a1bb30b9a4282b1ea46f46eb7e, type: 3}
+  title: Paivolution
+  photo: {fileID: 21300000, guid: a6b9cbabc8742b0e48ecd50547b77773, type: 3}
+  bulle: {fileID: 21300000, guid: 0075f534e2478c3bdb45ddd92c7f6dd0, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 1e918e04e2fed25349a6f0bc9cabb9ab, type: 3}
+  titre: {fileID: 21300000, guid: 63d1793ec03a76c1bb17b44af3a5fc4a, type: 3}
+  description: "Paivolution est un monde d\u2019\xE9nergie et de communaut\xE9. La
+    pens\xE9e permet aux habitants de communiquer entre eux et de tout transformer
+    comme ils le d\xE9sirent. Il y a trois zones diff\xE9rentes : de repos, d\u2019\xE9nergie
+    et de cr\xE9ativit\xE9. Les \xE9motions ressenties apparaissent dans leur corps."
+  backgroundColor: {r: 0.85882354, g: 0.7921569, b: 0.8901961, a: 0}

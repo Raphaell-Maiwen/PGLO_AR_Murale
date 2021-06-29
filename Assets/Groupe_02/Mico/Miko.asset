@@ -15,4 +15,12 @@ MonoBehaviour:
   prefab: {fileID: 2834158785113877994, guid: 8954c6befd770a4469483c55f88b4723, type: 3}
   eleve: Miko
   title: "L\u2019\xEEle Tatakomata"
-  photo: {fileID: 21300000, guid: cdebe9773d7a8424f8e5b1c19ac39ce7, type: 3}
+  photo: {fileID: 21300000, guid: 773c4f72469a1cda08d36894d314cab0, type: 3}
+  bulle: {fileID: 21300000, guid: 674f10d6ce58e19fbb7424b6f5f0ac45, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 4f3ea063c31363b3eb2d432401d90864, type: 3}
+  titre: {fileID: 21300000, guid: 444d2ca81f6c8ea21909ef25a56923b3, type: 3}
+  description: "Une \xEEle coup\xE9e du monde, perdue dans le Pacifique et peupl\xE9e
+    d\u2019indig\xE8nes. La faune et la flore sont constitu\xE9es d\u2019animaux
+    et de v\xE9g\xE9taux \xE9teints. Une civilisation extra-terrestre vit sous terre
+    et contr\xF4le l\u2019\xE9cosyst\xE8me de l\u2019\xCEle."
+  backgroundColor: {r: 0.8980392, g: 0.48235294, b: 0.65882355, a: 0}

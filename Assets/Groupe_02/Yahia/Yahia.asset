@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Yahia
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9132219843529525140, guid: 5dffa70928e247c47841709b39d4724f, type: 3}
+  eleve: Yahia
+  title: Dragontopia
+  photo: {fileID: 21300000, guid: 5ccebab470fc2b2babc81498e16f2e31, type: 3}
+  bulle: {fileID: 21300000, guid: c4dc938bb93213a12b7bb9fa83408658, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 47aed43fd7223f066bd25a21e12a927d, type: 3}
+  titre: {fileID: 21300000, guid: 36dfb370470c5d328aab276aefaf422a, type: 3}
+  description: "Un monde de dragons sous-terrain, secret et magique, o\xF9 l\u2019\xE9nergie
+    la plus puissante est cr\xE9\xE9e par des milliers de cristaux qui g\xE9n\xE8rent
+    de la lumi\xE8re."
+  backgroundColor: {r: 0.54509807, g: 0.36862746, b: 0.8392157, a: 0}

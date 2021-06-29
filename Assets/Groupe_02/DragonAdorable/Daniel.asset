@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 8633640620089759985, guid: 60a9fcf206bfa4c43a0a191d43877647, type: 3}
   eleve: Daniel
   title: Les Dragons adorables
-  photo: {fileID: 21300000, guid: a52016cf3eeee3f679a23f797aef046f, type: 3}
+  photo: {fileID: 21300000, guid: c0819f68169937213b2ccd55a1d3831b, type: 3}
+  bulle: {fileID: 21300000, guid: 9474fcc7f348531c59e164ea30687793, type: 3}
+  petiteBulle: {fileID: 21300000, guid: b6b748f38d41df254a813dcc3e8d1194, type: 3}
+  titre: {fileID: 21300000, guid: 94a6f4ff05c59717691c302c124e3a2b, type: 3}
+  description: "Un monde o\xF9 trois dragons adorables cumulent les aventures et
+    c\xF4toient une multitude de personnages sympathiques: un gu\xE9risseur chinois,
+    Capitaine Abo, le pingouin Walid et plusieurs autres."
+  backgroundColor: {r: 0.99215686, g: 0.78431374, b: 0.5058824, a: 0}

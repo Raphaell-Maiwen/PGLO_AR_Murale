@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 3195348631928479683, guid: d846cfe2ebe7e1d4a9114b79d363058f, type: 3}
   eleve: Carmi
   title: Multivers
-  photo: {fileID: 21300000, guid: 0e23d85cdcedd2642aa5d65ce85a7de1, type: 3}
+  photo: {fileID: 21300000, guid: 95af4e72de7c62d3595bc3fea09c7201, type: 3}
+  bulle: {fileID: 21300000, guid: 3cf6d686b37fa4e0b91b8b0b25e38da7, type: 3}
+  petiteBulle: {fileID: 21300000, guid: a5fb61639a9a597b1a5b36fcdfd6b84a, type: 3}
+  titre: {fileID: 21300000, guid: 56fc110152b730b1d85f9911d6108df3, type: 3}
+  description: "Un monde myst\xE9rieux compos\xE9 de 7 multivers, 7 villes (cr\xE9\xE9es
+    par des Dieux diff\xE9rents) et de plusieurs villages nordiques. N\xE9m\xE9sis,
+    la ville du Voyageur de l\u2019univers, flotte dans les airs."
+  backgroundColor: {r: 0.22352941, g: 0.7921569, b: 0.92941177, a: 0}

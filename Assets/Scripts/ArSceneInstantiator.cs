@@ -26,11 +26,29 @@ public class ArSceneInstantiator : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI title;
 
-    [SerializeField] Image photo;
 
+    [SerializeField] TextMeshProUGUI infoEleve;
+
+    [SerializeField] TextMeshProUGUI infoTitle;
+
+    [SerializeField] TextMeshProUGUI infoDescription;
+
+    [SerializeField] ScrollRect scrollRect;
+
+
+    // [SerializeField] Image photo;
+
+    [SerializeField] private SpriteRenderer bulleSpriteRenderer;
+    [SerializeField] private SpriteRenderer photoSpriteRenderer;
+    [SerializeField] private SpriteRenderer petiteBulleSpriteRenderer;
+    [SerializeField] private SpriteRenderer titreSpriteRenderer;
     void Awake()
     {
-        sceneRoot.localRotation = Quaternion.Euler(90f, 0f, 0f);
+        //if (Application.platform != RuntimePlatform.IPhonePlayer)
+        //{
+            sceneRoot.localRotation = Quaternion.Euler(90f, 0f, 0f);
+            sceneRoot.GetComponent<AlignUp>().enabled = true;
+        //}
         // canvas.localRotation = Quaternion.Euler(90f, 0f,0f);
         // canvas.localPosition -= Vector3.down;
     }
@@ -40,11 +58,25 @@ public class ArSceneInstantiator : MonoBehaviour
     {
         this.bulle = bulle;
 
-        eleve.text = bulle.Eleve;
+        bulleSpriteRenderer.sprite = bulle.SpriteBulle;
+        photoSpriteRenderer.sprite = bulle.SpritePhoto;
+        petiteBulleSpriteRenderer.sprite = bulle.SpritePetiteBulle;
+        titreSpriteRenderer.sprite = bulle.SpriteTitre;
 
-        title.text = bulle.Title;
 
-        photo.sprite = bulle.Photo;
+        infoEleve.text = bulle.Eleve;
+        infoTitle.text = bulle.Title;
+        infoDescription.text = bulle.Description;
+
+        GameManager.Instance.FadePostProcess.color = bulle.BackgroundColor;
+
+        scrollRect.verticalNormalizedPosition = 1f;
+
+        // eleve.text = bulle.Eleve;
+
+        // title.text = bulle.Title;
+
+        // photo.sprite = bulle.Photo;
     }
 
     void OnEnable()
@@ -67,6 +99,10 @@ public class ArSceneInstantiator : MonoBehaviour
         s.transform.localPosition = Vector3.zero;
         s.transform.localRotation = Quaternion.identity;
 
+        // GameManager.Instance.FadeIn();
+        // GameManager.Instance.ARMaterial.SetFloat("_dimFactor", 1);
+        //    GameManager.Instance.ARCameraBackground.enabled = true;
+
         StartCoroutine(UnlockInN(6f));
 
         // s.transform.SetParent(null);
@@ -83,6 +119,10 @@ public class ArSceneInstantiator : MonoBehaviour
 
     void Start()
     {
+        //    GameManager.Instance.ARCameraBackground.enabled = false;
+        // GameManager.Instance.ARMaterial.SetFloat("_dimFactor", 0);
+        // GameManager.Instance.FadeOut();
+
         mondeStart.StartFade();
         GameManager.Instance.Lock(this);
     }

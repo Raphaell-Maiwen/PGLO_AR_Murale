@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: David
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2193180765214063360, guid: d04909e6b1852ab4ba3ecf8d9cc30345, type: 3}
+  eleve: David
+  title: Les loucornes
+  photo: {fileID: 21300000, guid: 9fae78f700587b2bc8865e65578b10c9, type: 3}
+  bulle: {fileID: 21300000, guid: 8d7fc9ed0c796b9dfaa7f2a61c96d380, type: 3}
+  petiteBulle: {fileID: 21300000, guid: f264884b49d31144795fa1331dc78c98, type: 3}
+  titre: {fileID: 21300000, guid: e29519cd9385002ddbbecdfa36c2f8e3, type: 3}
+  description: "Les loucornes vont au coll\xE8ge. Ils portent avec eux un collier
+    qui capte les souvenirs. Les loucornes plus \xE2g\xE9s poss\xE8dent une corne
+    avec des pouvoirs qu\u2019ils vont transmettre \xE0 leurs enfants. Dans ce monde,
+    le ciel change de couleur."
+  backgroundColor: {r: 0.10980392, g: 0.4745098, b: 0.9137255, a: 0}

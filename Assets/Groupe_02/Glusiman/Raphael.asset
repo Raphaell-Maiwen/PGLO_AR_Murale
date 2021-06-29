@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 610717379446022518, guid: ab9bc03ff77076854823473ab1e7c464, type: 3}
   eleve: "Rapha\xEBl"
   title: Boule de gomme
-  photo: {fileID: 21300000, guid: b5b177784144cfdf1aafeaa5b07093e3, type: 3}
+  photo: {fileID: 21300000, guid: 9eacb9ab69178f7cca185cb1ecf94c01, type: 3}
+  bulle: {fileID: 21300000, guid: 76afaa28ec4aaf6569cd0c584f2c62ed, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 7e5e2558e924a0f2c8969a79dcf74f8a, type: 3}
+  titre: {fileID: 21300000, guid: db3dc6477686c1079a945e744349be37, type: 3}
+  description: "Un monde naturel en forme de visage o\xF9 la technologie est absente
+    et o\xF9 l\u2019on cultive les bonbons pour leur colle et pour la fabrication
+    d\u2019outils et de b\xE2timents."
+  backgroundColor: {r: 1, g: 0.7411765, b: 0.3882353, a: 0}

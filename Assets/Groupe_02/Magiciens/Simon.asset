@@ -15,4 +15,12 @@ MonoBehaviour:
   prefab: {fileID: 8852576850366946662, guid: 37b50a458c117734fa570c290f60e097, type: 3}
   eleve: Simon
   title: Les magiciens
-  photo: {fileID: 21300000, guid: 268df6aec3ac05047870ba1567cba6c8, type: 3}
+  photo: {fileID: 21300000, guid: 680be2d8b68f76b6f9f09815022664c1, type: 3}
+  bulle: {fileID: 21300000, guid: 26b3bc39958e14346be71f3c2cf9f474, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 78fd21b3eb60a9636be95261bedbd602, type: 3}
+  titre: {fileID: 21300000, guid: eab4414e7e354e0b3934c09a07364768, type: 3}
+  description: "Une \xE9cole de magie fr\xE9quent\xE9e par plusieurs magiciens o\xF9
+    chaque b\xE2tisse est utilis\xE9e pour une fonction pr\xE9cise: production de
+    balais, conception de potions magiques, fabrication de baguettes, culture des
+    plantes, conception de v\xEAtements."
+  backgroundColor: {r: 0.11764706, g: 0.53333336, b: 0.8980392, a: 0}

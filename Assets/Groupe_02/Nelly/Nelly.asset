@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 7332065039297070965, guid: 0c40ce9199d11f34c83d52b6faa6d861, type: 3}
   eleve: Nelly
   title: Ville-Nelly
-  photo: {fileID: 21300000, guid: 7b300c6c30f35f748b4dcc6c45ff3bbe, type: 3}
+  photo: {fileID: 21300000, guid: 675de23901c4c102fa63417affb72a85, type: 3}
+  bulle: {fileID: 21300000, guid: 6633915128146934eb87199043314a41, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 5c09af8c90241993d89974bb2e00e4f8, type: 3}
+  titre: {fileID: 21300000, guid: 8f092cdbc973c7f7295d9d975942fe23, type: 3}
+  description: "Une ville, avec un centre-ville, un m\xE9tro, la STM, l\u2019autoroute
+    720, le Vieux-Port, la Ronde, un Ikea, des ponts, des restaurants, le fleuve
+    et des bateaux. Nelly est une conductrice de la STM."
+  backgroundColor: {r: 0.95686275, g: 0.40784314, b: 0.4862745, a: 0}

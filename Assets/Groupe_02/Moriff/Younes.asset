@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 3114757082173744048, guid: 6db6de24ae4a5904ab63d925e20f53ba, type: 3}
   eleve: Younes
   title: "L\u2019univers de Morif"
-  photo: {fileID: 21300000, guid: 3e004e55e77708e47b6c8292c61ee907, type: 3}
+  photo: {fileID: 21300000, guid: bd58e7dbc9b3236dc8a5c07067e6975e, type: 3}
+  bulle: {fileID: 21300000, guid: bf33050e8b1c3fe15a377e85af9640f2, type: 3}
+  petiteBulle: {fileID: 21300000, guid: a084aae466eb4dec2848fcda8f36881a, type: 3}
+  titre: {fileID: 21300000, guid: f5f706ca49f59cbeb92a67e8d776250a, type: 3}
+  description: "Le jardin de Morif est constitu\xE9 de plantes bleues et vertes qui
+    poss\xE8dent le pouvoir de la force. Avec ses amis, il coupe les plantes pour
+    les apporter dans sa maison grise afin d\u2019en faire une potion sp\xE9ciale."
+  backgroundColor: {r: 0.68235296, g: 0.76862746, b: 0.9372549, a: 0}

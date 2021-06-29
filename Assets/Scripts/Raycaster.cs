@@ -6,6 +6,7 @@ public class Raycaster : MonoBehaviour
 {
 
     [SerializeField] LayerMask layerMask;
+    [SerializeField] float raycastDistance = 0.3f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +23,10 @@ public class Raycaster : MonoBehaviour
             Ray ray = GameManager.Instance.Camera.ScreenPointToRay(new Vector3(GameManager.Instance.Camera.pixelWidth / 2, GameManager.Instance.Camera.pixelHeight / 2, 0));
 
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 1f, layerMask))
+            if (Physics.Raycast(ray, out hit, raycastDistance, layerMask))
             {
                 BulleAnchor bulleAnchor = hit.collider.gameObject.GetComponent<BulleAnchor>();
-
-                Debug.Log("FOUND ONE!!!!!!!!");
-                Debug.Log(bulleAnchor.Bulle.name);
-
+                
                 if (bulleAnchor && !GameManager.Instance.IsLocked && GameManager.Instance.CurrentBulle?.Bulle != bulleAnchor.Bulle)
                 {
                     bulleAnchor.Spawn();

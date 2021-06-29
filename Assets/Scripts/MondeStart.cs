@@ -10,8 +10,12 @@ public class MondeStart : MonoBehaviour
 
     [SerializeField] AnimationCurve fadeInAnimationCurve;
 
-    [SerializeField] private float fadeDuration = 5f;
-    [SerializeField] private CanvasGroup fadeInCanvasGroup;
+    [SerializeField] private float fadeInDuration = 5f;
+    [SerializeField] private float fadeOutDuration = 5f;
+
+    // [SerializeField] private CanvasGroup fadeInCanvasGroup;
+
+    [SerializeField] private SpriteRenderer[] presentationSpriteRenderers;
 
     private FadePostProcess fadePostProcess;
 
@@ -21,6 +25,12 @@ public class MondeStart : MonoBehaviour
     void Awake()
     {
         fadePostProcess = GameManager.Instance.FadePostProcess;
+
+        for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+        {
+            Color color = presentationSpriteRenderers[i].color;
+            presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, 0f);
+        }
     }
 
     public void StartFade()
@@ -30,23 +40,34 @@ public class MondeStart : MonoBehaviour
 
     private IEnumerator FadeIn()
     {
+        Debug.Log("Commence fade in ");
+        Debug.Log(Time.time);
+
         float time = 0;
 
         float lastT = 0f;
 
-        float doneWhen = fadeOutAnimationCurve.keys[fadeOutAnimationCurve.keys.Length - 1].time;
+        float doneWhen = fadeInAnimationCurve.keys[fadeOutAnimationCurve.keys.Length - 1].time;
 
-        while (time <= fadeDuration)
+        while (time <= fadeInDuration)
         {
             float then = Time.time;
             yield return new WaitForEndOfFrame();
             float delta = Time.time - then;
 
-            float t = (time / fadeDuration);
+            float t = (time / fadeInDuration);
 
-            fadeInCanvasGroup.alpha = fadeInAnimationCurve.Evaluate(t);
+            // fadeInCanvasGroup.alpha = fadeInAnimationCurve.Evaluate(t);
 
-            fadePostProcess.fadeValue = fadeOutAnimationCurve.Evaluate(t);
+            float value = fadeInAnimationCurve.Evaluate(t);
+
+            for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+            {
+                Color color = presentationSpriteRenderers[i].color;
+                presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, value);
+            }
+
+            fadePostProcess.fadeValue = value;
 
             // if (t >= doneWhen && lastT < doneWhen)
             // {
@@ -58,38 +79,126 @@ public class MondeStart : MonoBehaviour
             time += delta;
         }
 
-        yield return new WaitForSeconds(6f);
+        for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+        {
+            Color color = presentationSpriteRenderers[i].color;
+            presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, 1f);
+        }
+        fadePostProcess.fadeValue = 1f;
+
+        yield return new WaitForSeconds(3f);
         StartCoroutine(FadeOut());
+
+        Debug.Log("Fini fade in ");
+        Debug.Log(Time.time);
     }
 
 
     private IEnumerator FadeOut()
     {
-        float t = 0;
+        Debug.Log("Commence fade out ");
+        Debug.Log(Time.time);
+
+        float time = 0;
 
         float lastT = 0f;
 
-        float doneWhen = fadeOutAnimationCurve.keys[fadeOutAnimationCurve.keys.Length - 1].time;
+        float doneWhen = fadeInAnimationCurve.keys[fadeOutAnimationCurve.keys.Length - 1].time;
 
-
-        while (t <= fadeDuration)
+        while (time <= fadeOutDuration)
         {
             float then = Time.time;
             yield return new WaitForEndOfFrame();
             float delta = Time.time - then;
 
-            fadePostProcess.fadeValue = 1f - fadeInAnimationCurve.Evaluate((t / fadeDuration));
-            fadeInCanvasGroup.alpha = 1f - fadeOutAnimationCurve.Evaluate(t / fadeDuration);
+            float t = (time / fadeOutDuration);
 
-            if (t >= doneWhen && lastT < doneWhen)
+            // fadeInCanvasGroup.alpha = fadeInAnimationCurve.Evaluate(t);
+
+            float value = 1f - fadeInAnimationCurve.Evaluate(t);
+
+            for (int i = 0; i < presentationSpriteRenderers.Length; i++)
             {
-                faded?.Invoke();
+                Color color = presentationSpriteRenderers[i].color;
+                presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, value);
             }
+
+            fadePostProcess.fadeValue = value;
+
+            // if (t >= doneWhen && lastT < doneWhen)
+            // {
+            //     faded?.Invoke();
+            // }
 
             lastT = t;
 
-
-            t += delta;
+            time += delta;
         }
+
+        for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+        {
+            Color color = presentationSpriteRenderers[i].color;
+            presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, 0f);
+        }
+        fadePostProcess.fadeValue = 0f;
+
+        faded?.Invoke();
+
+
+        Debug.Log("Fini fade out ");
+        Debug.Log(Time.time);
     }
+
+    // private IEnumerator FadeOut()
+    // {
+    //     Debug.Log("Commence fade out ");
+    //     Debug.Log(Time.time);
+    //     float t = 0;
+
+    //     float lastT = 0f;
+
+    //     float doneWhen = fadeOutAnimationCurve.keys[fadeOutAnimationCurve.keys.Length - 1].time;
+
+
+    //     while (t <= fadeDuration)
+    //     {
+    //         float then = Time.time;
+    //         yield return new WaitForEndOfFrame();
+    //         float delta = Time.time - then;
+
+    //         float value = 1f - fadeInAnimationCurve.Evaluate((t / fadeDuration));
+
+    //         fadePostProcess.fadeValue = value;
+    //         // fadeInCanvasGroup.alpha = 1f - fadeOutAnimationCurve.Evaluate(t / fadeDuration);
+
+    //         for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+    //         {
+    //             Color color = presentationSpriteRenderers[i].color;
+    //             presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, value);
+    //         }
+
+    //         if (t >= doneWhen && lastT < doneWhen)
+    //         {
+    //             faded?.Invoke();
+    //         }
+
+    //         for (int i = 0; i < presentationSpriteRenderers.Length; i++)
+    //         {
+    //             Color color = presentationSpriteRenderers[i].color;
+    //             presentationSpriteRenderers[i].color = new Color(color.r, color.g, color.b, 0f);
+    //         }
+    //         fadePostProcess.fadeValue = 0f;
+
+    //         lastT = t;
+
+
+    //         t += delta;
+
+
+    //     }
+
+
+    //     Debug.Log("Fini fade out ");
+    //     Debug.Log(Time.time);
+    // }
 }

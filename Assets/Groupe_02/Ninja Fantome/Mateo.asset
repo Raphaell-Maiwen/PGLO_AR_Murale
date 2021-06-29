@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babfaec5fe36ceaaf894cb7960c9e040, type: 3}
+  m_Name: Mateo
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8724527519604731598, guid: 485344c28f398b646850cc305491bc2e, type: 3}
+  eleve: "Mat\xE9o"
+  title: "La ville de Ninja-Fant\xF4me"
+  photo: {fileID: 21300000, guid: 863756fc4a0f99b4a90b44048ab56b68, type: 3}
+  bulle: {fileID: 21300000, guid: c49692c5ff82134368b1418264c31595, type: 3}
+  petiteBulle: {fileID: 21300000, guid: 92d552e42c2fee3f29f0eab7d2fbdcba, type: 3}
+  titre: {fileID: 21300000, guid: 5268ca264064436e8bcf793893c98c7b, type: 3}
+  description: "Mat\xE9o est le cr\xE9ateur de cette ville qu\u2019il a peint au
+    pinceau. Un jour, la ville s\u2019efface et Ninja- Fant\xF4me reprend le contr\xF4le
+    de la cr\xE9ation en m\xE9langeant toutes les couleurs."
+  backgroundColor: {r: 1, g: 0.63529414, b: 0.5176471, a: 0}

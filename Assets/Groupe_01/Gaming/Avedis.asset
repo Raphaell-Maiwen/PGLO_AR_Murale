@@ -15,4 +15,11 @@ MonoBehaviour:
   prefab: {fileID: 8732331714556122685, guid: 105221df36788dc47bb61078a441b494, type: 3}
   eleve: Avedis
   title: Le royaume des pixels
-  photo: {fileID: 21300000, guid: 61fe38d0cf8019f4b8acc177c7c5ed87, type: 3}
+  photo: {fileID: 21300000, guid: e937908a4ada9763eb2b722fa460622b, type: 3}
+  bulle: {fileID: 21300000, guid: 81bbd7657273187bcbc1eed363b2edda, type: 3}
+  petiteBulle: {fileID: 21300000, guid: ee0e0c61e15d648a6933405ebd33fd9b, type: 3}
+  titre: {fileID: 21300000, guid: 316005150159fbaabb476c56f9a3057e, type: 3}
+  description: "Un monde de jeux vid\xE9o o\xF9 se c\xF4toient divers \xE9l\xE9ments
+    de plusieurs jeux. Chacune des couleurs correspond \xE0 un jeu particulier. Le
+    danger de cet univers est la  d\xE9pendance qu\u2019il peut cr\xE9er."
+  backgroundColor: {r: 0.6431373, g: 0.8784314, b: 0.40392157, a: 0}
